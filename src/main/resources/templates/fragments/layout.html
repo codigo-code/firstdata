@@ -1,0 +1,57 @@
+<!doctype html>
+<html th:fragment="layout (template, menu)">
+<head>
+<title>Java Getting Started on Heroku</title>
+<link rel="stylesheet" type="text/css"
+	href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+	function validation() {
+		var tipo = $("input[name='creditCar']:checked").val();
+		var num = $("#creditNumber").val();
+		if (num == "") {
+			alert("please, must to select a type of credit card");
+		return false;
+		} else {
+
+			$.ajax({
+				url : "/getCardNames/" + num
+			}).then(function(data) {
+				for (var i = 0; i < data.length; i++) {
+					if (tipo == data[i].brand) {
+						alert("llego");
+					}
+				}
+			});
+		}
+	}
+</script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+		<div class="container"></div>
+	</nav>
+	<div th:replace="${template}" />
+
+
+	<script
+		src="http://cdn.jsdelivr.net/webjars/angularjs/1.3.8/angular.min.js"
+		th:src="@{/webjars/angularjs/1.3.8/angular.min.js}"></script>
+
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+
+
+
+
+</body>
