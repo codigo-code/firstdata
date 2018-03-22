@@ -5,12 +5,22 @@
 
 	<bean id="SQUA" class="com.fd.model.SQUA" lazy-init="true">
 		<property name="brand" value="SQUA" />
+		<property name="cardHolder" value="Person1"/>
+		<property name="creditNumber" value="12345678"/>
+		<property name="expirationDate" value="01/01/2020"/>
+		
 	</bean>
 	<bean id="PERE" class="com.fd.model.PERE" lazy-init="true">
 		<property name="brand" value="PERE" />
+		<property name="cardHolder" value="Person2"/>
+		<property name="creditNumber" value="123132123"/>
+		<property name="expirationDate" value="01/01/2022"/>
 	</bean>
 	<bean id="SCO" class="com.fd.model.SCO" lazy-init="true">
 		<property name="brand" value="SCO" />
+		<property name="cardHolder" value="Person3"/>
+		<property name="creditNumber" value="45546546"/>
+		<property name="expirationDate" value="01/01/2030"/>
 	</bean>
 
 </beans>

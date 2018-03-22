@@ -15,21 +15,72 @@
 	function validation() {
 		var tipo = $("input[name='creditCar']:checked").val();
 		var num = $("#creditNumber").val();
+		var operacionValida =  $("#operacionValida");
 		if (num == "") {
 			alert("please, must to select a type of credit card");
-		return false;
+			return false;
 		} else {
-
+	
 			$.ajax({
 				url : "/getCardNames/" + num
 			}).then(function(data) {
-				for (var i = 0; i < data.length; i++) {
-					if (tipo == data[i].brand) {
-						alert("llego");
-					}
-				}
+				console.log(data);
+// 				for (var i = 0; i < data.length; i++) {
+// 					if (tipo == data[i].brand) {
+// 						alert(data);
+// 					}
+// 				}
+
+				operacionValida.text(data);
 			});
 		}
+	}
+
+	function information() {
+		var infoDiv = $("#infoCard");
+		var tipo = $("input[name='creditCarValid']:checked").val();
+		$.ajax({
+			url : "/validate/" + tipo
+		}).then(function(data) {
+			for (var i = 0; i < data.length; i++) {
+				var res = jQuery.parseJSON(data);
+				if (tipo == res.brand) {
+					infoDiv.text("CardHolder:" + res.cardHolder + " Credit Number: "+res.creditNumber);
+				}
+			}
+		});
+	}
+
+	function checkRates() {
+		
+		var typeCard = $("input[name='creditCarRates']:checked").val();
+		var rates = $("#rates");
+		
+		$.ajax({
+			url : "rates/com.fd.model." + typeCard
+		}).then(function(data) {
+			rates.text("La tasa de operacion es de " + data + "%");
+				
+		});
+
+	//rates/com.fd.model.SQUA
+	}
+	
+	function getAll(){
+		var vtodo =$("#vtodo");
+		
+		$.ajax({
+			url : "getAll"
+		}).then(function(data) {
+// 			var res = jQuery.parseJSON(data);
+			
+			for (var i = 0; i < data.length; i++) {
+
+			vtodo.append("Tarjeta: " +data[i].brand + 
+					     "Numero de Tarjeta: " +data[i].creditNumber + " Responsable: "+ data[i].cardHolder + " fecha de vencimiento: " + data[i].expirationDate + "</br>");
+			}				
+				
+		});
 	}
 </script>
 

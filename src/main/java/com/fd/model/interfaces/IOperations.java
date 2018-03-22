@@ -10,7 +10,7 @@ public interface IOperations<T extends Card> {
 	
 	public boolean checkDate(T tObject);
 	
-	public double calculateRate(T tObject);
+	double calculateRate(Class tObject) throws InstantiationException, IllegalAccessException;
 	
 	
 

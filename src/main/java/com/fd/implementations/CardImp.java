@@ -2,12 +2,15 @@ package com.fd.implementations;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+
 import com.fd.model.Card;
 import com.fd.model.PERE;
 import com.fd.model.SCO;
 import com.fd.model.SQUA;
 import com.fd.model.interfaces.IOperations;
 
+@Component
 public class CardImp implements IOperations<Card> {
 
 	@Override
@@ -23,12 +26,13 @@ public class CardImp implements IOperations<Card> {
 	}
 
 	@Override
-	public double calculateRate(Card tObject) {
-		if (tObject instanceof SQUA) {
+	public double calculateRate(Class tObject) throws InstantiationException, IllegalAccessException {
+		Object t = tObject.newInstance();
+		if (t instanceof SQUA) {
 			return (new Date().getYear() / new Date().getMonth());
-		} else if (tObject instanceof SCO) {
+		} else if (t instanceof SCO) {
 			return (new Date().getDay() * 0.5);
-		} else if (tObject instanceof PERE) {
+		} else if (t instanceof PERE) {
 			return (new Date().getMonth() * 0.1);
 		}
 		return 0;

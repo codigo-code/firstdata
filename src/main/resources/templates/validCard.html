@@ -17,17 +17,56 @@
 		<div class="alert alert-info text-center" role="alert"></div>
 		<hr>
 		<div class="row">
-			<div class="col-md-12">
-			<input type="radio" name="creditCar" value="SQUA" />
-			<i class="fa fa-cc-amex" style="font-size:36px"></i> 
-			<input type="radio" name="creditCar" value="SCO"/>
-			<i class="fa fa-cc-mastercard" style="font-size:36px"></i>
-			<input type="radio" name="creditCar" value="PERE"/>
-			<i class="fa fa-cc-visa" style="font-size:36px"></i>
-				<input type="text" id="creditNumber"  placeholder="xxxx-xxxx-xxxx-xxxx"/>
+			<div class="col-md-6">
+				<input type="radio" name="creditCar" value="SQUA" /> <i
+					class="fa fa-cc-amex" style="font-size: 36px"></i> <input
+					type="radio" name="creditCar" value="SCO" /> <i
+					class="fa fa-cc-mastercard" style="font-size: 36px"></i> <input
+					type="radio" name="creditCar" value="PERE" /> <i
+					class="fa fa-cc-visa" style="font-size: 36px"></i> <input
+					type="text" id="creditNumber" placeholder="xxxx-xxxx-xxxx-xxxx" />
 				<button onclick="validation()">Check!</button>
 			</div>
-			<!-- row -->
+			<div class="col-md-6">
+				<div id="operacionValida"></div>
+			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<input type="radio" name="creditCarValid" value="SQUA" /> <i
+					class="fa fa-cc-amex" style="font-size: 36px"></i> <input
+					type="radio" name="creditCarValid" value="SCO" /> <i
+					class="fa fa-cc-mastercard" style="font-size: 36px"></i> <input
+					type="radio" name="creditCarValid" value="PERE" /> <i
+					class="fa fa-cc-visa" style="font-size: 36px"></i>
+				<button onclick="information()">Information</button>
+			</div>
+			<div class="col-md-6">
+				<div id="infoCard"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<input type="radio" name="creditCarRates" value="SQUA" /> <i
+					class="fa fa-cc-amex" style="font-size: 36px"></i> <input
+					type="radio" name="creditCarRates" value="SCO" /> <i
+					class="fa fa-cc-mastercard" style="font-size: 36px"></i> <input
+					type="radio" name="creditCarRates" value="PERE" /> <i
+					class="fa fa-cc-visa" style="font-size: 36px"></i>
+				<button onclick="checkRates()">Information</button>
+			</div>
+			<div class="col-md-6">
+				<div id="rates"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<button onclick="getAll()">Ver todo Json</button>
+				<div id="vtodo"></div>
+			</div>
+		</div>
+	</div>
+
+
 </body>
 </html>

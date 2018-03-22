@@ -1,0 +1,56 @@
+2018-03-22 16:52:05 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 16:57:21 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 16:57:30 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 16:57:39 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 16:58:25 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 16:58:44 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 16:58:44 ERROR ValidationService:72 - No bean named 'validate' available
+2018-03-22 16:58:49 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:00:50 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:02:58 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:18:46 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:19:02 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:19:26 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:19:46 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:20:10 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:20:47 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:21:05 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:21:42 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:21:49 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:22:28 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:22:45 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:23:15 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:23:34 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:24:49 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:25:08 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:27:00 INFO  ValidationService:82 - metodo getRates: sin errores
+2018-03-22 17:29:14 INFO  ValidationService:82 - metodo getRates: sin errores
+2018-03-22 17:29:18 INFO  ValidationService:82 - metodo getRates: sin errores
+2018-03-22 17:29:20 INFO  ValidationService:82 - metodo getRates: sin errores
+2018-03-22 17:29:23 INFO  ValidationService:69 - Metodo: getInformation : sin errores
+2018-03-22 17:29:37 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:30:44 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:32:12 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:32:28 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:34:20 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:35:26 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:35:54 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:36:14 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:36:17 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:36:59 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:37:09 INFO  ValidationService:53 - Metodo: getCardNames : sin errores
+2018-03-22 17:38:37 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:41:16 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:41:44 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:41:48 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:42:05 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:42:15 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:42:57 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:44:37 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:45:23 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:46:44 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:46:50 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:46:53 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:47:16 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:47:37 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
+2018-03-22 17:47:46 INFO  ValidationService:109 - Metodo: getCardNames : sin errores
